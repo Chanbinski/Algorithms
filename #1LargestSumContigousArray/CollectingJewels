@@ -1,6 +1,6 @@
-Problem: https://www.acmicpc.net/problem/2208
+** Problem ** : https://www.acmicpc.net/problem/2208
 
-Solution: 
+** Solution ** : (C++)
 
 #include <cstdio>
 #include <algorithm>
