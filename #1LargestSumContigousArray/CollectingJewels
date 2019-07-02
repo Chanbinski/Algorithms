@@ -1,0 +1,33 @@
+Problem: https://www.acmicpc.net/problem/2208
+
+Solution: 
+
+#include <cstdio>
+#include <algorithm>
+
+using namespace std;
+
+const int N = 100005;
+int n, m= 0;
+int a[N] = {0,};
+
+int main() {
+    
+    scanf("%d%d", &n, &m);
+    for(int i=1;i<=n;i++){
+        int x;
+        scanf("%d", &x);
+        a[i]=a[i-1]+x;
+    }
+    
+    
+    int ans = 0;
+    int temp = 1e9;
+    for(int i=m;i<=n;i++){
+        temp = min(a[i-m], temp);
+        ans = max(a[i] - temp, ans);
+    }
+    
+    printf("%d", ans);
+    return 0;
+}
