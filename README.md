@@ -3,7 +3,7 @@ This is what I organized through solving various problems that require some comp
 
 ## Contents
 
-[1. Largest Sum Contiguous Subarray](#largest-sum-algorithm)
+[1. Largest Sum Contiguous Subarray](#largest-sum-algorithm)_
 [2. Binary Search](#binary-search-algorithm)
 
 
