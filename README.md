@@ -3,12 +3,13 @@ This is what I organized through solving various problems that require some comp
 
 ## Contents
 
-[1. Largest Sum Contiguous Subarray](#largest-sum-algorithm)_
-[2. Binary Search](#binary-search-algorithm)
+[1. Largest Sum Contiguous Subarray](#1.-largest-sum-algorithm)
+
+[2. Binary Search](#2.-binary-search-algorithm)
 
 
 
-### Largest Sum Algorithm
+### 1. Largest Sum Algorithm
 
    This is used to find the sum of the subarray that has the maximum sum. For example, if there is an array of 5 integers, [-1, -2, 3, 1, -8], the subarray with the largest sum would be [3, 1]. 
 
@@ -55,7 +56,7 @@ int main() {
 ```
 
 
-### Binary Search Algorithm
+### 2. Binary Search Algorithm
 
    This is used to find an element in an array which is much more effiecent than linear search, which is basically going through every elements. The array has to be initially sorted in order to go through the binary search algorithm. [More](https://www.geeksforgeeks.org/binary-search/)
 
