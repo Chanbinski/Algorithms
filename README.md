@@ -1,7 +1,7 @@
 # Algorithms for Problem Solving
 This is what I organized through solving various problems that require some complicated algorithms. 
 
-## Contents
+### Contents
 
 [1. Largest Sum Contiguous Subarray](#largest-sum-algorithm)
 
@@ -9,13 +9,13 @@ This is what I organized through solving various problems that require some comp
 
 
 
-### 1. Largest Sum Algorithm
+## Largest Sum Algorithm
 
    This is used to find the sum of the subarray that has the maximum sum. For example, if there is an array of 5 integers, [-1, -2, 3, 1, -8], the subarray with the largest sum would be [3, 1]. 
 
    We could use two for loops to grab every sum of every subarray, but this very inefficient if the size of the array is big. So, we use Kandane's algorithm to find the subarray with maximum sum. [More](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/) This is very efficient and easy to use. Before the code, there is one more concept, which is the prefix sum. 
 
-##### Prefix Sum Algorithm
+### Prefix Sum Algorithm
 
    So, if there is an array a [1 2 3 4 5] and we want to find the sum of the second element until the fourth element, which is 2+3+4 = 9, we can go through for loops. However, there is a better way. If we cumulate the sum and write a[3] - a[0], it will give you exactly 9. [More](https://en.wikipedia.org/wiki/Prefix_sum)
     
@@ -56,7 +56,7 @@ int main() {
 ```
 
 
-### 2. Binary Search Algorithm
+## Binary Search Algorithm
 
    This is used to find an element in an array which is much more effiecent than linear search, which is basically going through every elements. The array has to be initially sorted in order to go through the binary search algorithm. [More](https://www.geeksforgeeks.org/binary-search/)
 
