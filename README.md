@@ -4,6 +4,7 @@ This is what I organized through solving various problems that require some comp
 ## Contents
 
 [1. Largest Sum Contiguous Subarray](#largest-sum-algorithm)
+[2. Binary Search](#binary-search-algorithm)
 
 
 
@@ -52,3 +53,47 @@ int main() {
     printf("%d", ret);
 }
 ```
+
+
+### Binary Search Algorithm
+
+   This is used to find an element in an array which is much more effiecent than linear search, which is basically going through every elements. The array has to be initially sorted in order to go through the binary search algorithm. [More](https://www.geeksforgeeks.org/binary-search/)
+
+```
+- output: 3
+
+#include <cstdio>
+#include <algorithm>
+
+using namespace std;
+
+int binarySearch(int x, int array[]) {
+    
+    int l,m = 0;
+    int h = sizeof(array) - 1;
+    
+    while(l<=h){
+        m = (l+h)/2;
+        if(x<array[m]) h=m-1;
+        else if(x>array[m]) l=m+1;
+        else return m;
+    }
+    return -1;
+}
+
+int main() {
+    
+    int array[] = {1, 2, 3, 4, 5}; //array has to be sorted before using binary search
+    sort(array, array+5);
+    printf("%d", binarySearch(4, array));
+}
+```
+
+
+
+
+
+
+
+
+
